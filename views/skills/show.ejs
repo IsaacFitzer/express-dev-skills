@@ -7,7 +7,12 @@
     <title>Developer Skills</title>
 </head>
 <body>
+    <h1>Skill</h1>
     <h3><%= skill.skill %></h3>
-  </body>
+    <form action="/skills/<%= skill.id %>?_method=DELETE"
+      class="delete-form" method="POST">
+      <button type="submit">Delete Skill</button>
+    </form>
+</body>
 
 </html>
